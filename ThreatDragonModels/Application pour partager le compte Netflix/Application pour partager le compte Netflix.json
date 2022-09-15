@@ -26,16 +26,27 @@
               "angle": 0,
               "id": "badbb576-5646-44d8-b738-ea34464b5791",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "title": "Replay",
+                  "type": "Spoofing",
+                  "description": "Même si le canal est crypté l'attaquant peut essayer d'isoler une partie du traffic qui permet à l'utilisateur de se connecter",
+                  "threatId": "af5da2a5-358e-4b72-844c-72cd7eb9e1b2"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "utilisateur"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -104,16 +115,27 @@
               "angle": 0,
               "id": "caab4632-0f2a-44e7-a166-d83068196e01",
               "z": 12,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Utilisation d'une vulnérabilité connue depuis le domaine public",
+                  "type": "Elevation of privilege",
+                  "description": "Si nginx est corrompu les fichiers auxquels il a le droit d'accès le sont probablement aussi",
+                  "threatId": "0fb944a6-530b-4902-bff0-9970687a6737"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "serveur nginx"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -193,13 +215,47 @@
                 }
               ],
               "z": 14,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "NotApplicable",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "title": "Usurpation du certificat du serveur",
+                  "type": "Spoofing",
+                  "threatId": "3e588a89-c24d-45e5-a45d-d48a1863ec93"
+                },
+                {
+                  "status": "NotApplicable",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Trouver l'adresse mail valide avec la méthode brute-force",
+                  "type": "Spoofing",
+                  "threatId": "5afc7659-faa0-4753-ab1b-16c63ee67013"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "Rendre le serveur web inaccessible avec trop de requêtes",
+                  "threatId": "de1c6b55-2068-459a-9795-9382f51993c2"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Un virus ou keylogger présent sur la machine du client",
+                  "type": "Information disclosure",
+                  "threatId": "9b01f7d3-1f0e-4502-9d90-f3ee2a8c31ca"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -216,16 +272,26 @@
               "angle": 0,
               "id": "b1d8596f-1302-41f4-9be7-51df634b1b52",
               "z": 15,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Reverse engineering",
+                  "type": "Information disclosure",
+                  "threatId": "280aa2fe-cb9c-4abf-aed7-cce6842c41b0"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "application php"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -344,6 +410,24 @@
               ],
               "z": 18,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "title": "Usurper l'identité du serveur mail",
+                  "type": "Spoofing",
+                  "threatId": "5c18456b-f50e-4979-b0c7-6f6e7add4ab9"
+                },
+                {
+                  "status": "NotApplicable",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "Récupérer le jeton de connexion si l'envoi se fait avec du SMTP plain text",
+                  "threatId": "99ce6ed0-9875-40c3-abac-0c3f4bbc2166"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -386,13 +470,24 @@
                 }
               ],
               "z": 19,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "Corruption du fichier de la base de données",
+                  "description": "Le fichier se trouve directement sur la machine qui abrite l'application alors un virus présent sur celle-ci pourrait tout à fait corrompre la base de données",
+                  "threatId": "09da673f-7a40-48e2-9497-1cbf6156d851"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -438,6 +533,86 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 373,
+                "y": 39
+              },
+              "target": {
+                "x": 158,
+                "y": 208
+              },
+              "vertices": [],
+              "id": "1e29c923-bf0f-437f-a03f-035fe2b82d63",
+              "z": 21,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 460,
+                "y": 328
+              },
+              "target": {
+                "x": 599,
+                "y": 116
+              },
+              "vertices": [],
+              "id": "657cf3f7-606f-4278-b596-38e5dc0dc533",
+              "z": 22,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 633,
+                "y": 127
+              },
+              "target": {
+                "x": 776,
+                "y": 196
+              },
+              "vertices": [],
+              "id": "e202e91d-f543-430e-80d1-1d60ac67a613",
+              "z": 23,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 776,
+                "y": 344
+              },
+              "target": {
+                "x": 796,
+                "y": 219
+              },
+              "vertices": [],
+              "id": "5a0246a8-fdbc-4255-a7e8-853f57128b92",
+              "z": 24,
+              "attrs": {}
             }
           ]
         },
